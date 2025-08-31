@@ -1,0 +1,11 @@
+{
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.tabSize": 4
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "intelephense.environment.phpVersion": "7.2.6",
+  "php.suggest.basic": false,
+  "php.validate.executablePath": "D:\\Open Server Panel\\modules\\php\\PHP_7.2\\php"
+}
