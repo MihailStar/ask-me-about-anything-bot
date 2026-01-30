@@ -42,9 +42,14 @@ if ($update === null) {
     exit();
 }
 
-$chatId = $update["message"]["chat"]["id"];
+$updateMessage = $update["message"] ?? null;
+if ($updateMessage === null) {
+    exit();
+}
 
-$chatText = $update["message"]["text"] ?? null;
+$chatId = $updateMessage["chat"]["id"];
+
+$chatText = $updateMessage["text"] ?? null;
 if ($chatText === null) {
     sendMessage($chatId, "Напишите вопрос - получите ответ");
     exit();
